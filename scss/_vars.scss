@@ -1,0 +1,13 @@
+:root {
+  // base
+  --font-family: "Heading-Now", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 75px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --green-color:   #0AE203;
+  --blue-color: #02123A;
+  --accent-color: #F7F7F1;
+}
