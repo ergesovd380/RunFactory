@@ -1,0 +1,17 @@
+.title-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 66px;
+  color: var(--light-color);
+
+  @include for-desktop {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  @include small-tablet {
+    font-size: 25px;
+    line-height: 20px;
+  }
+}

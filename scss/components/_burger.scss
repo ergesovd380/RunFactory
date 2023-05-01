@@ -1,0 +1,54 @@
+.burger {
+  display: none;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100px;
+    width: 26px;
+    height: 2px;
+    background-color: var(--light-color);
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -7px;
+    }
+
+    &:last-child {
+      margin-top: 7px;
+    }
+  }
+
+  @include tablet {
+    display: inline-block;
+  }
+
+  @include mobile {
+    
+  }
+}
+
+.burger-close {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: var(--container-offset);
+  border: 1px solid rgba(255, 255, 255, 0.088);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url(../../image/close.png);
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    display: block;
+  }
+}

@@ -1,0 +1,83 @@
+.city {
+  background-color: var(--blue-color);
+  background-image: url(../../image/city/back-line.png);
+
+  @include for-desktop {
+    background-image: none;
+  }
+
+  &__title {
+    padding-top: 90px;
+    text-transform: uppercase;
+
+    @include big-desktop {
+      padding-top: 60px;
+    }
+  }
+
+  &__value {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 80px;
+    padding-top: 40px;
+
+    @include big-desktop {
+      gap: 50px;
+    }
+  }
+
+  &__img {
+    grid-column: 6 span;
+    margin-top: 20px;
+
+    @include big-desktop {
+      grid-column: 8 span;
+    }
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+  }
+
+  &__text {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-column: 6 span;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 60px;
+    text-align: left;
+    color: var(--light-color);
+
+    @include big-desktop {
+      grid-column: 4 span;
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    @include tablet {
+      grid-column: 6 span;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    @include small-tablet {
+      padding-top: 20px;
+    }
+  }
+
+  &__footer-text {
+    padding: 60px 0 35px 0;
+  }
+}
