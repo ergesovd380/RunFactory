@@ -17,11 +17,11 @@ html {
   height: 100%;
 }
 
-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
+// body {
+//   min-height: 100%;
+//   display: grid;
+//   grid-template-rows: 1fr auto;
+// }
 
 .page {
   height: 100%;
@@ -97,6 +97,11 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  @include mobile {
+    padding: 0 var(--container-offset-mobile);
+    max-width: var(--container-width-mobile);
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

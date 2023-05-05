@@ -1,1 +1,2 @@
-import './components/_header.js'
+import './components/_burger.js'
+import './components/_swiper.js'

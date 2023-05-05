@@ -3,11 +3,16 @@
 @import "../scss/mixins";
 @import "../scss/fonts";
 @import "../scss/settings";
+@import "../scss/mixins/swiper-bundle.min.css";
 
 // Components
 @import "../scss/components/btns";
 @import "../scss/components/burger";
+@import "../scss/components/swiper";
 @import "../scss/components/text";
 @import "../scss/components/nav";
 @import "../scss/components/header";
 @import "../scss/components/city";
+@import "../scss/components/train";
+@import "../scss/components/knowledge";
+@import "../scss/components/partner";

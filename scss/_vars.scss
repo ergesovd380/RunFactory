@@ -3,7 +3,9 @@
   --font-family: "Heading-Now", sans-serif;
   --content-width: 1920px;
   --container-offset: 75px;
+  --container-offset-mobile: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-width-mobile: calc(var(--content-width) + (var(--container-offset-mobile) * 2));
 
   // colors
   --light-color: #fff;

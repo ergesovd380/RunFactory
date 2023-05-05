@@ -1,0 +1,16 @@
+.partner {
+  padding: 60px 0 60px 0;
+  background-color: var(--blue-color);
+  background-image: url(../../image/partner/background-line.png);
+  background-position: right;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    padding: 40px 0 40px 0;
+    background-image: none;
+  }
+
+  @include small-tablet {
+    padding: 40px 0 20px 0;
+  }
+}
