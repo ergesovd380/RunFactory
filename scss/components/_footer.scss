@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--footer-color);
+  
+  &__logo {
+    width: 90%;
+
+    @include tablet {
+      width: 70%;
+    }
+  }
+
+  &__grid {
+    padding: 70px 0 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+
+    @include tablet {
+      padding: 40px 0 20px 0;
+    }
+  }
+
+  &__column {
+    grid-column: 1 span;
+
+    @include tablet {
+      grid-column: 2 span;
+      text-align: center;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    &-item {
+      padding: 7px 0 7px 0;
+    }
+
+    &-link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: var(--light-color);
+
+      &:hover {
+        color: var(--green-color);
+      }
+
+      &:active {
+        color: var(--green-color);
+      }
+    }
+
+    &-last {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--light-color);
+
+      &:hover {
+        color: var(--green-color);
+      }
+    }
+  }
+
+  &__messenger {
+    display: flex;
+
+    &-item {
+      padding-left: 40px;
+    }
+    
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &__store {
+    display: flex;
+
+    &-item {
+      width: 90px;
+      height: 30px;
+    }
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    padding-bottom: 22px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    @include tablet{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @include mobile {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__name {
+    grid-column: 5 span;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
+
+  &__polytic {
+    grid-column: 6 span;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.42);
+
+    @include mobile {
+      padding-top: 20px;
+    }
+  }
+}

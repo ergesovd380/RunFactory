@@ -3,6 +3,7 @@ import '../functions/swiper-bundle.min.js'
 new Swiper('.swiper__knowledge', {
   slidesPerView: 1,
   spaceBetween: 40,
+  loop: true,
   scrollbar: {
     el: '.swiper__scroll',
     draggable: true,
@@ -12,8 +13,9 @@ new Swiper('.swiper__knowledge', {
     prevEl: '.swiper__prev',
   },
   breakpoints: {
-    768: {
+    769: {
       slidesPerView: 2,
+      loop: false,
     },
   }
 });

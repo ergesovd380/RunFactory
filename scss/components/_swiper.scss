@@ -2,10 +2,10 @@
 
   &__media {
     position: relative;
-    margin: 45px 0 45px 0;
+    margin: 45px 0;
 
     @include tablet {
-      margin: 25px 0 25px 0;
+      margin: 25px 0;
     }
   }
 

@@ -34,6 +34,10 @@
     &:hover {
       color: var(--green-color);
     }
+    
+    &:active {
+      color: var(--green-color);
+    }
 
     @include tablet {
       font-weight: 600;
