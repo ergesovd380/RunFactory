@@ -13,7 +13,11 @@
     }
   }
 
-  &__items {    
+  &__items {
+    &.active {
+      color: var(--green-color);
+    }
+
     @include tablet {
       margin-right: 0;
       margin-bottom: 30px;
@@ -34,8 +38,8 @@
     &:hover {
       color: var(--green-color);
     }
-    
-    &:active {
+
+    &.active {
       color: var(--green-color);
     }
 
